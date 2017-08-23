@@ -11,8 +11,6 @@ import store from './src/redux/store';
 
 EStyleSheet.build(Colors);
 
-console.log(store);
-
 export default class App extends React.Component {
   state = {
     fontLoaded: false
@@ -44,7 +42,6 @@ export default class App extends React.Component {
   }
 
   render() {
-  console.log(store);
     if (!this.state.fontLoaded) {
       return <AppLoading />;
     }
